@@ -151,11 +151,10 @@ const total = myNumbers.reduce((acc, curr) => {
 // the myNumbers array into the newly created myNumbersIndex array.
 
 // Code Here
+let myNumbersIndex = [];
 
-myNumbers.forEach(function (item, index, array) {
-  myNumbersIndex = [];
-  myNumbers.length = myNumbersIndex;
-  return myNumbersIndex;
+myNumbers.forEach(function (item, index, myNumbers) {
+  return myNumbersIndex.push(index);
 });
 
 //////////////////PROBLEM 18////////////////////
