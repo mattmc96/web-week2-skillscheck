@@ -109,6 +109,14 @@ const bigOrSmall = (arr) => {
 
 //Code Here
 
+const arrayReverser = (arr) => {
+  let reversed = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed;
+};
+
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. You will be using .map, .filter, .reduce and .forEach to manipulate the array in the following problems.
@@ -119,24 +127,36 @@ const myNumbers = [3, 55, 788, 2, 1];
 // First, use .map to create a new array that doubles each number. Call the new array 'doubled'.
 
 // Code Here
-
+const doubled = myNumbers.map((e) => (e *= 2));
 //////////////////PROBLEM 15////////////////////
 
 // Now, use .filter to create a new array containing any numbers that are greater than 100. Call the new array 'filtered'.
 
 // Code Here
+const filtered = myNumbers.filter((e) => e > 100);
 
 //////////////////PROBLEM 16////////////////////
 
 // Next, use reduce to get the total of the numbers in the array summed together. Store the total in a new variable named 'total'.
 
 // Code Here
+const total = myNumbers.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
 
 //////////////////PROBLEM 17////////////////////
 
-// Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array.
+// Finally, use .forEach to find the index of each item in the array. To begin,
+//create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from
+// the myNumbers array into the newly created myNumbersIndex array.
 
 // Code Here
+
+myNumbers.forEach(function (item, index, array) {
+  myNumbersIndex = [];
+  myNumbers.length = myNumbersIndex;
+  return myNumbersIndex;
+});
 
 //////////////////PROBLEM 18////////////////////
 
