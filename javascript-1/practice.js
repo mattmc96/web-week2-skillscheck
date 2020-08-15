@@ -159,11 +159,15 @@ myNumbers.forEach(function (item, index, myNumbers) {
 
 //////////////////PROBLEM 18////////////////////
 
-// Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
+// Did you know that George Foreman has five sons named George?
+// Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array
+//in a variable named 'forTheLoveOfGeorge'.
 const notGeorge = ["Louis", "Ted", "Bill", "Sharon", "Mark", "Angela"];
 
 // Code Here
-
+const forTheLoveOfGeorge = notGeorge.map((e) => {
+  return (e = "George");
+});
 //////////////////PROBLEM 19////////////////////
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter().
@@ -177,6 +181,12 @@ const people = [
 ];
 
 // Code Here
+
+const enemies = people.filter((e) => {
+  if (e.friend === false) {
+    return "enemies";
+  }
+});
 
 //////////////////PROBLEM 20////////////////////
 
