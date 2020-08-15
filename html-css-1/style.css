@@ -1,0 +1,62 @@
+.header {
+    height: 8vh;
+    width: 100vw;
+    border-bottom: 4px solid #00a1e0;
+    display: flex;
+    justify-content: center;
+}
+
+.company {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-headline {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.hero-box {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+
+.navbar {
+    display: flex;
+    align-self: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.nav-link {
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.hero-container {
+    display: flex;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    height: 60vh;
+    width: 100%;
+    border: 1px solid black;
+
+
+}
