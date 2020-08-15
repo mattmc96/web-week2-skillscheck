@@ -190,6 +190,10 @@ const enemies = people.filter((e) => {
 
 //////////////////PROBLEM 20////////////////////
 
-// Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
+// Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a
+//variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
+const totallyAwesome = people.reduce((acc, curr) => {
+  return acc + curr.awesomeLevel;
+}, 0);
