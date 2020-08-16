@@ -1,7 +1,7 @@
 .header {
-    height: 8vh;
+    height: 6vh;
     width: 100vw;
-    border-bottom: 4px solid #00a1e0;
+
     display: flex;
     justify-content: center;
 }
@@ -10,32 +10,32 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: gray;
 }
-
 
 .hero-headline {
     font-size: 36px;
     margin-bottom: 25px;
     font-weight: 700;
+    justify-items: center;
+    color: yellow;
+
 }
 
 .hero-box {
+    box-sizing: content-box;
     width: 100%;
-    max-width: 1200px;
-    height: 100%;
+    background-color: black;
+    height: 22vh;
     display: flex;
     position: relative;
-    box-sizing: border-box;
-
 }
-
 
 .navbar {
     display: flex;
     align-self: flex-end;
     padding: 15px;
     box-sizing: border-box;
-
 }
 
 .nav-link {
@@ -49,14 +49,118 @@
     position: absolute;
     top: 0;
     right: 0;
+    box-sizing: content-box;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: 65vh;
+    border: 1px solid #000;
     box-sizing: border-box;
+    justify-content: center;
+    column-gap: 130px;
+
 }
 
 
-.main {
-    height: 60vh;
+
+.box1 {
+    display: flex;
+    height: 30%;
+    width: 15%;
+    border-radius: 7%;
+    background-color: rgb(164, 255, 215);
+
+
+}
+
+.box2 {
+    display: flex;
+
+    height: 30%;
+    width: 15%;
+    position: relative;
+    right: 10;
+    border-radius: 7%;
+    background-color: rgb(164, 255, 215)
+}
+
+.box3 {
+    display: flex;
+
+    height: 30%;
+    width: 15%;
+    position: relative;
+    border-radius: 7%;
+    background-color: rgb(164, 255, 215)
+}
+
+
+.rect1 {
+    display: flex;
+    height: 30%;
+    width: 35%;
+    position: relative;
+    right: 10;
+    align-content: center;
+    flex-direction: row;
+    background-color: rgb(255, 195, 108)
+}
+
+.rect2 {
+    display: flex;
+    height: 30%;
+    width: 35%;
+    position: relative;
+    right: 10;
+    flex-direction: column;
+    background-color: rgb(255, 195, 108)
+}
+
+.btm-txt {
+    display: flex;
+    height: 30%;
+    width: 30%;
+    position: relative;
+    align-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-style: 16px;
+}
+
+
+.btm-pic {
+    background-image: url('roger_the_elephant.jpg');
+    display: flex;
+    max-height: 40%;
+    box-sizing: content-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30%;
+    width: 27%;
+    max-height: fit-content;
+    position: relative;
+    align-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-end;
+
+}
+
+
+
+
+
+
+.footer {
+    border: 1px solid #000;
+    height: 8vh;
     width: 100%;
-    border: 1px solid black;
 
 
 }
