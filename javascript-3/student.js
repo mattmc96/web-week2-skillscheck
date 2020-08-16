@@ -48,7 +48,6 @@ const removeItem = (index) => {
 // is between 1 and 5, return the string 'NUMBEROFGROCERIES items' with NUMBEROFGROCERIES replaced by the number
 // of items in your groceries array.
 
-// I did exactly what this code said to do. These questions are very hard to read and understand what they want me to do.
 
 const checkGroceryCount = () => {
   if (groceries.length >= 5) {
